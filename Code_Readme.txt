@@ -95,19 +95,22 @@ v_write and con_td_write are supplemental functions for Stance_sim_Ode that perf
 						 
 ------------------------------------------------------------------------------------------
 
-The functions used for the optimization are outlined here.  MDPSO is a proprietary 
-function and thus not shared here.  GA was run using matlab's built in algorithm.
+The functions used for the optimization are outlined here. MDPSO is a proprietary function and thus not shared here. GA was run using Matlab's built-in function.
 
-Set up the constraints and cost function for the genetic algorithm
-constraintsGA
-objfun_Min_EnergyLoss_Sens_GA
+The objective and constraints of MDPSO are defined in:
+objfun_Min_EnergyLoss_MDPSO.m
 
-set up everything for MDPSO
-optimization_energy_dr_mdpso
+The objectives of GA are defined in:
+objfun_Min_EnergyLoss_Sens_GA.m
 
-The two algorithms were run using:
-run_GA
-run_MDPSO
+The constraints of GA are defined in:
+constraintsGA.m
+
+To call the optimization algorithms, use the following scripts accordingly:
+run_MDPSO.m
+run_GA.m
+
+To add all the subfolders to Matlab path, it is recommended to place the files at the first level of the project folder.
 ------------------------------------------------------------------------------------------
 
 I got tired of writing lots of lines of code every time I wanted to graph something and
