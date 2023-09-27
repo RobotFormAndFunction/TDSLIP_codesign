@@ -1,0 +1,34 @@
+Robot:
+Mass, 1.2
+l0, 0.17
+k0, 1699
+b, 5
+Xoffset, 0
+Yoffset, 0
+------------------------------------------
+Simulation:
+tend, 0.4
+tsteps, 1.0000e-04
+tstepf, 1.0000e-04
+terrainvar, 0
+g, 9.8000
+tervec, 100
+yVar, 10
+filepath, 
+stancemodel, @stance_model
+flightmodel, @flight_conservative_ode
+------------------------------------------
+Motor:
+Ra, 0.1350
+La, 1.6600e-05
+kt, 0.0098
+kb, 0.0098
+J, 1.8300e-06
+mech_c, 1.6000e-06
+omega0, 0
+curr0, 0.2000
+gearR, 33.0625
+gearJ, 8.0000e-08
+connect_torque, 0
+connect_voltage, 0
+omega_drive, 0
