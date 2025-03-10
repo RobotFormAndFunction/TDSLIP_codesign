@@ -1,0 +1,13 @@
+To use a constant touchdown angle during simulation chage the following:
+
+Modify sim_param.flightmodel to:
+
+	sim_param.flightmodel=@flight_conservative_ode;
+
+Modify add the following fields to func_param:
+
+	func_param.F_con=2; %enables constant touchdown
+	func_param.td_noise = [mu, sigma]; % noise is added using normrnd where
+				           % mu is the zero offset (will propably 
+					   % be 0) sigma is standard deviation in
+					   % radians. Noise is a guassian ditribution
